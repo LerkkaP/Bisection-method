@@ -1,21 +1,21 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-laskuri = 0
-funktio = input("Anna funktio: ")
-maara = int(input("Anna tulostettavien nollakohtien määrä: "))
-alkuarvo = int(input("Anna alkuarvo: "))
-loppuarvo = int(input("Anna loppuarvo: "))
-tarkkuus = int(input("Anna vastauksen haluttu tarkkuus: "))
+counter = 0
+function = input("Give a function: ")
+quantity = int(input("Give the number of how many approximations are printed: "))
+initial_value = int(input("Give an initial value: "))
+final_value = int(input("Give a final value: "))
+precision = int(input(": "))
 
 
 def f(x):
-    kasittely = eval(funktio)
-    return kasittely
+    evaluation = eval(function)
+    return evaluation
 
-if f(alkuarvo) > 0 and f(loppuarvo) < 0 or f(alkuarvo) < 0 and f(loppuarvo) > 0:
-    vali = f"]{alkuarvo}, {loppuarvo}["
-    print(f"Funktion nollakohta on välillä {vali}.")
+if f(initial_value) > 0 and f(final_value) < 0 or f(initial_value) < 0 and f(final_value) > 0:
+    interval = f"]{initial_value}, {final_value}["
+    print(f"Function has a solution in interval {interval}.")
 
     x = np.linspace(-6, 6, num=1000)
     y = f(x)
@@ -32,24 +32,24 @@ if f(alkuarvo) > 0 and f(loppuarvo) < 0 or f(alkuarvo) < 0 and f(loppuarvo) > 0:
 
     plt.plot(x, y, label="f(x)")
     plt.legend()
-    plt.xlabel("x - akseli")
-    plt.ylabel("y - akseli")
-    plt.title("Kuvaaja")
+    plt.xlabel("x - axis")
+    plt.ylabel("y - axis")
+    plt.title("Graph")
     plt.show()
 
-    while laskuri <= maara:
-        keskikohta = 0.5 * (alkuarvo + loppuarvo)
-        arvo_a = f(alkuarvo)
-        arvo_c = f(keskikohta)
-        tulo_ac = arvo_a * arvo_c
-        laskuri += 1
-        if tulo_ac >= 0:
-            alkuarvo = keskikohta
-        elif tulo_ac <= 0:
-            loppuarvo = keskikohta
-    print("c =", round(keskikohta, tarkkuus))
+    while counter <= quantity:
+        midway = 0.5 * (initial_value + final_value)
+        value_a = f(initial_value)
+        value_c = f(midway)
+        product_ac = value_a * value_c
+        counter += 1
+        if product_ac >= 0:
+            initial_value = midway
+        elif product_ac <= 0:
+            final_value = midway
+    print("c =", round(midway, precision))
 
 else:
-    vali = f"]{alkuarvo}, {loppuarvo}["
-    print(f"Funktiolla ei ole nollakohtaa välillä {vali}.")
+    interval = f"]{initial_value}, {final_value}["
+    print(f"Function has no solution in interval {interval}.")
 
