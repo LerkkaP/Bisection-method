@@ -3,10 +3,10 @@ import numpy as np
 
 counter = 0
 function = input("Give a function: ")
-quantity = int(input("Give the number of how many approximations are printed: "))
+quantity = int(input("Give the number of approximations printed: "))
 initial_value = int(input("Give an initial value: "))
 final_value = int(input("Give a final value: "))
-precision = int(input(": "))
+precision = int(input("Give a wanted precision: "))
 
 
 def f(x):
