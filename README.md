@@ -1,3 +1,3 @@
 # Bisection-method
-Bisection method is a numerical method in mathematics to find the roots of any continuous function.
+Bisection method is a numerical method in mathematics for finding roots of continuous functions. This program not only returns the approximation but also plots the function 
 
