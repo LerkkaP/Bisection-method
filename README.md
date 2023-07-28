@@ -15,6 +15,23 @@ The program will then validate whether the function has at least one root within
 
 Next, the program will apply the Bisection Method to find the roots of the function within the specified interval. It will return an approximation of the solutions with the desired precision.
 
+## <span style="font-size: smaller;">Example</span>
+
+Let's find the roots of the function x**3 - 2*x - 5 within the interval [1, 3], with a precision of 5 decimal places.
+
+**Function**: x**3 - 2*x - 5
+**Quantity**: 20
+**Initial value**: 1
+**Final value**: 3
+**Precision**: 5
+
+The program will display the interval ]1, 3[ and plot the graph of the function. Finally, it will output the roots it found:
+
+```bash
+Function has a solution in interval ]1, 3[.
+The root is: c = 2.09455
+```
+
 ## <span style="font-size: smaller;">Dependencies</span>
 This program requires the following Python libraries:
 
@@ -26,4 +43,8 @@ You can install these libraries using pip:
 
 ```bash
 pip install matplotlib numpy sympy
+```
+
+
+
 
