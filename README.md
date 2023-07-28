@@ -26,7 +26,7 @@ Let's find a root of the function x**3 - 2*x - 5 within the interval [1, 3], wit
 **Precision**: 5
 
 The program will display the interval ]1, 3[ and plot the graph of the function. Finally, it will output the root it found:
-![Figure 1](https://github.com/LerkkaP/Bisection-method/assets/91789264/4c528217-859a-4e02-9664-ca87166dfa76)
+![Figure 1](Figure%201.png)
 
 ```bash
 Function has a solution in interval ]1, 3[.
