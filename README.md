@@ -13,11 +13,11 @@ Run the program and provide the required inputs:
 
 The program will then validate whether the function has at least one root within the provided interval. If there are roots, it will display the interval and plot the function's graph using Matplotlib.
 
-Next, the program will apply the Bisection Method to find the roots of the function within the specified interval. It will return an approximation of the solutions with the desired precision.
+Next, the program will apply the Bisection Method to find the roots of the function within the specified interval. It will return an approximation of the solutions with the desired precision. It's important to note that the bisection method implemented in the program may find only one root within the provided interval, even if there are multiple possible roots. The program will return an approximation of the solution with the desired precision.
 
 ## <span style="font-size: smaller;">Example</span>
 
-Let's find the roots of the function x**3 - 2*x - 5 within the interval [1, 3], with a precision of 5 decimal places.
+Let's find a root of the function x**3 - 2*x - 5 within the interval [1, 3], with a precision of 5 decimal places. N.B:
 
 **Function**: x**3 - 2*x - 5
 **Quantity**: 20
@@ -25,7 +25,7 @@ Let's find the roots of the function x**3 - 2*x - 5 within the interval [1, 3], 
 **Final value**: 3
 **Precision**: 5
 
-The program will display the interval ]1, 3[ and plot the graph of the function. Finally, it will output the roots it found:
+The program will display the interval ]1, 3[ and plot the graph of the function. Finally, it will output the root it found:
 ![Figure 1](https://github.com/LerkkaP/Bisection-method/assets/91789264/4c528217-859a-4e02-9664-ca87166dfa76)
 
 ```bash
